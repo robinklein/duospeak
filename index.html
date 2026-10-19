@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DuoSpeak Privacy &amp; Support</title>
+<style>
+:root{
+  --ground:#F4F4F7; --paper:#FFFFFF; --ink:#1C1C1E; --muted:#5E5E63; --rule:#DCDCE2;
+  --you:#0060DF; --guest:#9E5C00; --chip:#E8EEFB;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#0A0A0C; --paper:#16161A; --ink:#F5F5F7; --muted:#A1A1A6; --rule:#2C2C31;
+    --you:#6CB6FF; --guest:#FFB340; --chip:#16233A; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0A0A0C; --paper:#16161A; --ink:#F5F5F7; --muted:#A1A1A6; --rule:#2C2C31;
+  --you:#6CB6FF; --guest:#FFB340; --chip:#16233A; color-scheme:dark;
+}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",system-ui,sans-serif;font-size:17px;line-height:1.55;padding-inline:20px;padding-block:32px 64px}
+.wrap{max-width:680px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+header{display:flex;flex-direction:column;gap:10px}
+.app{font-size:14px;font-weight:600;letter-spacing:.02em;color:var(--muted)}
+h1{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display",system-ui,sans-serif;font-size:clamp(30px,6vw,40px);line-height:1.1;letter-spacing:-.02em;margin:0;text-wrap:balance}
+.lede{margin:0;color:var(--muted);font-size:18px}
+.summary{background:var(--paper);border:1px solid var(--rule);border-radius:20px;padding:20px 22px}
+.summary p{margin:0}
+.summary strong{color:var(--you)}
+section{display:flex;flex-direction:column;gap:14px}
+h2{font-size:17px;margin:6px 0 0}
+p,ul{margin:0}
+ul{padding-left:20px;display:flex;flex-direction:column;gap:6px}
+.exception{border-left:3px solid var(--guest);padding:4px 0 4px 16px;display:flex;flex-direction:column;gap:6px}
+.meta{font-size:14px;color:var(--muted)}
+.placeholder{background:var(--chip);padding:1px 6px;border-radius:6px;font-weight:600}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="app">DuoSpeak · Offline Translator</div>
+    <h1>Privacy Policy</h1>
+    <p class="lede">Your conversations stay on your iPhone. This page explains what the app uses, and why.</p>
+  </header>
+
+  <div class="summary" role="note">
+    <p><strong>In short.</strong> DuoSpeak collects no data. No account, no ads, no analytics, no tracking. Speech recognition and translation run on your iPhone, without a network connection.</p>
+  </div>
+
+  <section>
+    <h2>Microphone</h2>
+    <p>DuoSpeak listens to the microphone while the app is open, to transcribe what each person says and translate it for the other. Audio is never recorded or stored, and it never leaves the iPhone. When the app moves to the background, it releases the microphone.</p>
+
+    <h2>Speech recognition and translation</h2>
+    <p>Speech is turned into text by Apple's speech recognition, on the iPhone. Translation is done by Apple's translation or by Apple Intelligence, also on the iPhone. The model that recognizes which language is being spoken is built into the app. No translation server is used.</p>
+
+    <h2>Camera and photos</h2>
+    <p>To translate the text in a photo (a menu, a sign), the image is read on the iPhone. DuoSpeak does not send it anywhere and does not keep it.</p>
+
+    <h2>What stays on the iPhone</h2>
+    <ul>
+      <li>Your settings and recent language pairs.</li>
+      <li>The phrases you marked as favorites.</li>
+    </ul>
+    <p>Conversation content is not kept: it disappears when you clear the conversation or close the app. Deleting the app erases everything.</p>
+
+    <h2>Language downloads</h2>
+    <p>To translate offline, iOS downloads language models from Apple's servers. iOS performs this download under Apple's privacy policy. It contains no conversation.</p>
+
+    <div class="exception">
+      <h2>One exception: preparing listening</h2>
+      <p>For a few languages, iOS only downloads the listening model after a first use of Apple's speech recognition service. In that case, once per language and with a network connection, DuoSpeak creates a sample sentence with the iPhone's synthetic voice (its welcome sentence) and sends it to Apple's service. It is never your voice or your conversation.</p>
+    </div>
+
+    <h2>What DuoSpeak does not do</h2>
+    <ul>
+      <li>No account, no sign-up.</li>
+      <li>No data sent to the developer or any third party.</li>
+      <li>No ads, no analytics, no tracking.</li>
+    </ul>
+
+    <h2>Children</h2>
+    <p>The app collects no data, including children's data.</p>
+
+    <h2>Changes</h2>
+    <p>If this policy changes, the new version will be posted on this page with a new date.</p>
+
+    <h2 id="support">Support and contact</h2>
+    <p>A question, a problem, a wrong translation? Write to <a href="mailto:duospeaktranslator@gmail.com">duospeaktranslator@gmail.com</a>. Tell us your iPhone model, your iOS version and the two languages you were using.</p>
+    <p class="meta">Last updated: October 20, 2026. © 2026 Robin Kleinsinger.</p>
+  </section>
+</div>
+</body>
+</html>
